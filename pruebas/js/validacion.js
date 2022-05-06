@@ -8,5 +8,8 @@ form.addEventListener("submit", e =>{
     let mensajeMostar;
     let entrar = false;
 
+    if(numChip.value.length <8 || numChip.value.length >13)
+    mensajeMostar += "Ingrese Entre 8 y 13 numeros"
+    entrar = true;
     
 })
