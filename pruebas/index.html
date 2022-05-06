@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="titulo">Formulario Mascotas</h1>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+                <form action="" method="POST" name="formulario" id="form">
+                    <div class="group-form">
+                        <label for="" class="labe">Nombre Mascota:</label>                    
+                        <input type="text" name="nombre" id="nomb" class="form-control" required>
+                    </div>
+                    
+                    <div class="group-form">
+                        <label for="" class="labe">Numero de chip</label>
+                        <input type="number" name="numero" id="chip" class="form-control" required>
+                    </div>
+                    
+                    <div class="group-form">
+                        <label for="" class="labe">Edad Mascota</label>
+                        <input type="number" name="edad-mascota" id="edad" class="form-control" required>
+                    </div>
+                    
+                    <div class="group-form">
+                        <label for="" class="labe">Direccion</label>
+                        <input type="text" name="direccion" id="direc" class="form-control" required>
+                    </div>
+                </form>
+                <p id="mensaje"></p>
+            </div>
+            <p>Macho
+                <input type="radio" name="Macho" id="M" required>
+            </p>
+            <p>Hembra
+                <input type="radio" name="Hembra" id="H" required>
+            </p>
+            <select>
+                <option>
+                    Seleccion una Opción:
+                </option>
+                <option>
+                    Marrón
+                </option>
+                <option>
+                    Negro
+                </option>
+                <option>
+                    Castaño
+                </option>
+                <option>
+                    Amarillo
+                </option>
+                <option>
+                    Blanco
+                </option>
+            </select>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-primary">Revertir</button>
+    <script src="js/validacion.js"></script>
+</body>
+
+</html>
